@@ -7804,12 +7804,42 @@ Copyright (c) 2015 Daniel Eden
 .header-back-bg-5 {
   background-image: url(../img/backgrounds/xbox-background.jpg);
 }
+.header-back-bg-5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
 .header-back-bg-5-dark {
   background-image: url(../img/backgrounds/xbox-background-dark.jpg);
   background-position: right top;
 }
+.header-back-bg-5-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
 .header-back-ps3 {
   background-image: url(../img/backgrounds/ps3-background.jpg);
+}
+.header-back-ps3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 .header-back-bg-web {
   background-image: url(../img/backgrounds/8.jpg);
@@ -7840,7 +7870,7 @@ Copyright (c) 2015 Daniel Eden
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 /* iphone banner image  */
@@ -7855,7 +7885,7 @@ Copyright (c) 2015 Daniel Eden
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 /* laptop page banner image  */
@@ -7871,7 +7901,7 @@ Copyright (c) 2015 Daniel Eden
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 /* computer page banner image  */
@@ -7886,7 +7916,7 @@ Copyright (c) 2015 Daniel Eden
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 .header-back-buttons .button {

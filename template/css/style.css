@@ -18103,7 +18103,7 @@ input.changelog-input {
     padding: 40px 0 0;
   }
   .page-title {
-    font-size: 3.125em;
+    font-size: clamp(24px,2vw,32px);
   }
   .page-description {
     font-size: 1em;

@@ -7802,7 +7802,10 @@ Copyright (c) 2015 Daniel Eden
   background-image: url(../img/backgrounds/opened-ps4.jpg);
 }
 .header-back-bg-5 {
-  background-image: url(../img/backgrounds/xbox-background.jpg);
+  background-image: url(../img/backgrounds/shop-pic.jfif);
+  background-size: cover;
+										background-position: center;
+										position: relative;
 }
 .header-back-bg-5::before {
   content: "";
@@ -7815,7 +7818,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 0;
 }
 .header-back-bg-5-dark {
-  background-image: url(../img/backgrounds/xbox-background-dark.jpg);
+  background-image: url(../img/backgrounds/shop-pic.jfif);
   background-position: right top;
 }
 .header-back-bg-5-dark::before {
@@ -7829,7 +7832,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 0;
 }
 .header-back-ps3 {
-  background-image: url(../img/backgrounds/ps3-background.jpg);
+  background-image: url(../img/backgrounds/shop-pic.jfif);
 }
 .header-back-ps3::before {
   content: "";
@@ -7860,7 +7863,7 @@ Copyright (c) 2015 Daniel Eden
 }
 /* iphone banner image  */
 .header-back-bg-iphone {
-  background-image: url(../img/iphone/iphone.jpg);
+  background-image: url(../img/backgrounds/shop-pic.jfif);
   background-position: center center;
 }
 .header-back-bg-iphone::before {
@@ -7906,7 +7909,7 @@ Copyright (c) 2015 Daniel Eden
 }
 /* computer page banner image  */
 .header-back-bg-computer {
-  background-image: url(../img/computer/computer-banner-image.jpg);
+  background-image: url(../img/backgrounds/shop-pic.jfif);
   background-position: center center;
 }
 .header-back-bg-computer::before {

@@ -9622,6 +9622,25 @@ Copyright (c) 2015 Daniel Eden
   width: 100%;
   min-height: 600px;
   position: relative;
+  /* border: 1px solid red/; */
+}
+
+.shop-image {
+  background-image: url('../img/backgrounds/shop-pic.jfif');
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.shop-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
 }
 
 .header-back-full-page .header-back-container {

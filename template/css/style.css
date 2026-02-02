@@ -1913,6 +1913,7 @@ body {
   line-height: 100%;
   font-family: "Roboto", sans-serif;
   color: #333333;
+  /* border:3px solid red; */
 }
 
 #content {
@@ -9627,9 +9628,10 @@ Copyright (c) 2015 Daniel Eden
 
 .shop-image {
   background-image: url('../img/backgrounds/shop-pic.jfif');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .shop-image::before {

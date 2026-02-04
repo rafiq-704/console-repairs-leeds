@@ -15,7 +15,7 @@
 	<link rel="icon" type="image/png" href="../../../img/favicons/favicon-96x96.png" sizes="96x96">
 	<!-- Include StyleSheets -->
 	<link rel="stylesheet" href="../../../css/style.css">
-	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<link rel="stylesheet" href="../../../css/custom.css">
 	<script src="../../../js/modernizr.js"></script>
 	<!-- aos animation library -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -426,9 +426,6 @@
 											£63.99</span>
 									</div>
 								</div>
-							</div>
-
-							<div class="row">
 								<div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
 									<div class="grid-view-elem js-grid-view-elem"
 										style="height: 300px; border-radius: 20px;">
@@ -492,8 +489,8 @@
 										href="tel:+441132591500">0113 259 1500</a></h3>
 							</div>
 							<!-- shop image  -->
-							<div class="shop-image header-back-full-page js-full-page"
-								data-aos="zoom-in" data-aos-duration="2000" style="margin-bottom: 40px;">
+							<div class="shop-image header-back-full-page js-full-page" data-aos="zoom-in"
+								data-aos-duration="2000" style="margin-bottom: 40px;">
 							</div>
 							<div class="row">
 								<div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
@@ -693,7 +690,25 @@
      -->
 </body>
 <script>
-	AOS.init();
+	let aosEnabled = window.innerWidth >= 1200;
+	function initAOS() {
+		AOS.init({
+			duration: 2000,
+			disable: () => window.innerWidth < 1200
+		});
+	}
+
+	window.addEventListener("load", initAOS);
+
+	window.addEventListener("resize", () => {
+		const shouldEnable = window.innerWidth >= 1200;
+		if (shouldEnable !== aosEnabled) {
+			aosEnabled = shouldEnable;
+
+			AOS.refreshHard();
+			initAOS();
+		}
+	});
 </script>
 
 </html>

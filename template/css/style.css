@@ -9627,7 +9627,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .shop-image {
-  background-image: url('../img/backgrounds/shop-pic.jfif');
+  background-image: url('../img/shop-images/IMG_2421.JPG');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -9635,6 +9635,114 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .shop-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.shop-image-contact {
+  background-image: url('../img/shop-images/IMG_2594.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop-image-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.shop-image-faq {
+  background-image: url('../img/shop-images/IMG_2686.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop-image-faq::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.shop-image-privacy {
+  background-image: url('../img/shop-images/IMG_2689.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop-image-privacy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.shop-image-terms {
+  background-image: url('../img/shop-images/IMG_2473.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop-image-terms::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.shop-image-ps3 {
+  background-image: url('../img/shop-images/iphone-repair-leeds-caer-park.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop-image-ps3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.shop-image-ps4 {
+  background-image: url('../img/shop-images/interior.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop-image-ps4::before {
   content: '';
   position: absolute;
   top: 0;

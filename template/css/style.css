@@ -9446,6 +9446,7 @@ Copyright (c) 2015 Daniel Eden
   width: auto;
 }
 
+
 .footer .logo-image {
   opacity: 0.8;
   margin-right: 5px;
@@ -9630,11 +9631,13 @@ Copyright (c) 2015 Daniel Eden
   background-image: url('../img/shop-images/IMG_2421.JPG');
   background-size: cover;
   background-position: center;
-  position: relative;
+  /* position: relative; */
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+
 }
 
-.shop-image::before {
+/* .shop-image::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9643,16 +9646,17 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
 .shop-image-contact {
   background-image: url('../img/shop-images/IMG_2594.jpg');
   background-size: cover;
   background-position: center;
-  position: relative;
+  /* position: relative; */
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-.shop-image-contact::before {
+/* .shop-image-contact::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9661,16 +9665,18 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
 .shop-image-faq {
   background-image: url('../img/shop-images/IMG_2686.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+
 }
 
-.shop-image-faq::before {
+/* .shop-image-faq::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9679,16 +9685,17 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
 .shop-image-privacy {
   background-image: url('../img/shop-images/IMG_2689.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-.shop-image-privacy::before {
+/* .shop-image-privacy::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9697,16 +9704,18 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
+
 .shop-image-terms {
   background-image: url('../img/shop-images/IMG_2473.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-.shop-image-terms::before {
+/* .shop-image-terms::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9715,16 +9724,18 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
+
 .shop-image-ps3 {
   background-image: url('../img/shop-images/iphone-repair-leeds-caer-park.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-.shop-image-ps3::before {
+/* .shop-image-ps3::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9733,16 +9744,18 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
+
 .shop-image-ps4 {
   background-image: url('../img/shop-images/interior.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-.shop-image-ps4::before {
+/* .shop-image-ps4::before {
   content: '';
   position: absolute;
   top: 0;
@@ -9751,12 +9764,47 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
-}
+} */
 
 .header-back-full-page .header-back-container {
   display: table-cell;
   vertical-align: middle;
   padding-bottom: 40px;
+  z-index: 2;
+  position: relative;
+}
+.header-back-container {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 40px;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .header-back-full-page .header-back-container {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 200px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+/* display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 0px; */
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+@media(max-width: 767px) {
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .header-back-default {
@@ -12913,7 +12961,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   color: #ffffff;
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .page-info-simple .page-title {
@@ -12930,7 +12978,18 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   font-size: 1em;
   font-weight: 300;
   margin-bottom: 40px;
-  color: white
+  color: white;
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .page-description {
+    margin-top: 20px;
+  }
+
+  .page-info-simple .page-title {
+    font-size: 3em;
+  }
 }
 
 .page-info-simple .page-description {
@@ -21808,9 +21867,9 @@ input.changelog-input {
     font-size: clamp(24px, 2vw, 32px);
   }
 
-  .page-description {
+  /* .page-description {
     font-size: 1em;
-  }
+  } */
 
   #content.panels {
     padding: 50px 0;

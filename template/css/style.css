@@ -9868,15 +9868,16 @@ Copyright (c) 2015 Daniel Eden
   /* margin-bottom: 100px; */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .page-title {
-    /* margin-bottom: 40px */
+    margin-bottom: 100px
   }
 }
 
 .page-description {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  margin-bottom: 40px;
   color: #ddd;
   animation: fadeInUp 1s ease-out 0.3s backwards;
 }
@@ -13117,12 +13118,13 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   color: white;
 }
 
-/* .page-description {
+.page-description {
   font-size: 1em;
   font-weight: 300;
+  /* margin-bottom: 40px; */
   color: white;
-  margin-top: 100px;
-} */
+  /* margin-top: 100px; */
+}
 
 @media (max-width: 768px) {
   .page-description {

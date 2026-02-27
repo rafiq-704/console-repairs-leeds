@@ -9436,6 +9436,7 @@ Copyright (c) 2015 Daniel Eden
   position: relative;
   max-width: 100%;
   height: auto;
+  /* border: 1px solid red; */
 }
 
 .logo-image img {
@@ -9444,6 +9445,15 @@ Copyright (c) 2015 Daniel Eden
   height: auto;
   max-height: 120px;
   width: auto;
+  /* border: 1px solid red; */
+
+}
+
+@media (max-width: 767px) {
+  .logo-image img {
+    width: 300px;
+    height: 25px;
+  }
 }
 
 
@@ -9773,6 +9783,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 2;
   position: relative;
 }
+
 .header-back-container {
   display: table-cell;
   vertical-align: middle;
@@ -9780,11 +9791,22 @@ Copyright (c) 2015 Daniel Eden
   z-index: 2;
   position: relative;
 }
+
 @media (max-width: 767px) {
   .header-back-full-page .header-back-container {
     display: table-cell;
     vertical-align: top;
     padding-top: 200px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-back-full-page .header-back-container {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 100px;
     z-index: 2;
     position: relative;
   }
@@ -9797,13 +9819,133 @@ Copyright (c) 2015 Daniel Eden
   align-items: center;
   justify-content: center;
   margin-top: 0px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  #title-homepage {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  #title-homepage {
+    font-size: 4rem;
+  }
+}
+
+.header-back-redesign {
+  background-image: url('../img/backgrounds/shop-pic.jfif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-back-redesign::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+
+.page-info {
+  text-align: center;
+}
+
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+  animation: fadeInUp 1s ease-out;
+  /* margin-bottom: 100px; */
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    /* margin-bottom: 40px */
+  }
+}
+
+.page-description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ddd;
+  animation: fadeInUp 1s ease-out 0.3s backwards;
+}
+
+.button-hero {
+  display: inline-block;
+  padding: 18px 45px;
+  background: #2288cc;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  animation-duration: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(34, 136, 204, 0.4);
+  animation: fadeInUp 1s ease-out 0.6s backwards;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 768px) {
+  .button-hero {
+    padding: 14px 30px;
+    font-size: 0.8rem;
+  }
+}
+
+.button-hero:hover {
+  background: transparent;
+  border-color: #2288cc;
+  transform: translateY(-2px);
+  transition-duration: 500;
+  box-shadow: 0 6px 20px rgba(34, 136, 204, 0.6);
+  color: #2288cc;
+  text-decoration: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media(max-width: 767px) {
   .btn-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+
+  }
+}
+
+@media(max-width: 400px) {
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+
   }
 }
 
@@ -12961,7 +13103,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   color: #ffffff;
   font-weight: 900;
   text-transform: uppercase;
-  /* margin-bottom: 30px; */
+  text-align: center;
+  /* margin-bottom: 40px; */
 }
 
 .page-info-simple .page-title {
@@ -12974,13 +13117,12 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   color: white;
 }
 
-.page-description {
+/* .page-description {
   font-size: 1em;
   font-weight: 300;
-  margin-bottom: 40px;
   color: white;
   margin-top: 100px;
-}
+} */
 
 @media (max-width: 768px) {
   .page-description {
@@ -13288,6 +13430,11 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .style-span {
   color: #2288cc;
+}
+
+/* new added */
+.page-heading {
+  color: #000;
 }
 
 /* accordion styling  */

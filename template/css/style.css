@@ -9443,7 +9443,7 @@ Copyright (c) 2015 Daniel Eden
   display: block;
   max-width: 100%;
   height: auto;
-  max-height: 120px;
+  max-height: 300px;
   width: auto;
   /* border: 1px solid red; */
 
@@ -9452,6 +9452,14 @@ Copyright (c) 2015 Daniel Eden
 @media (max-width: 767px) {
   .logo-image img {
     width: 300px;
+    max-width: 300px;
+    height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .logo-image img {
+    width: 300px;
+    max-width: 200px;
     height: 25px;
   }
 }
@@ -9782,6 +9790,7 @@ Copyright (c) 2015 Daniel Eden
   padding-bottom: 40px;
   z-index: 2;
   position: relative;
+  padding-top: 60px;
 }
 
 .header-back-container {
@@ -9796,7 +9805,7 @@ Copyright (c) 2015 Daniel Eden
   .header-back-full-page .header-back-container {
     display: table-cell;
     vertical-align: top;
-    padding-top: 200px;
+    padding-top: 180px;
     z-index: 2;
     position: relative;
   }
@@ -9806,7 +9815,7 @@ Copyright (c) 2015 Daniel Eden
   .header-back-full-page .header-back-container {
     display: table-cell;
     vertical-align: top;
-    padding-top: 100px;
+    padding-top: 170px;
     z-index: 2;
     position: relative;
   }
@@ -9817,8 +9826,10 @@ Copyright (c) 2015 Daniel Eden
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 0px;
+  height: 300px;
+
 
 }
 
@@ -9826,6 +9837,13 @@ Copyright (c) 2015 Daniel Eden
 
   #title-homepage {
     font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+    animation: fadeInUp 1s ease-out;
+    /* margin-bottom: 100px; */
   }
 }
 
@@ -9833,6 +9851,13 @@ Copyright (c) 2015 Daniel Eden
 
   #title-homepage {
     font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+    animation: fadeInUp 1s ease-out;
+    /* margin-bottom: 100px; */
   }
 }
 
@@ -9877,10 +9902,12 @@ Copyright (c) 2015 Daniel Eden
 .page-description {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  font-weight: 400;
   color: #ddd;
   animation: fadeInUp 1s ease-out 0.3s backwards;
 }
+
 
 .button-hero {
   display: inline-block;
@@ -9928,7 +9955,7 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-@media(max-width: 767px) {
+/* @media(max-width: 767px) {
   .btn-text {
     display: flex;
     flex-direction: column;
@@ -9937,13 +9964,14 @@ Copyright (c) 2015 Daniel Eden
     height: 400px;
 
   }
-}
+} */
 
 @media(max-width: 400px) {
   .btn-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
     justify-content: space-around;
     height: 400px;
 
@@ -12942,8 +12970,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .menu-side-trigger {
   position: relative;
-  margin-top: 10px;
-  margin-left: 10px;
+  /* margin-top: 10px;
+  margin-left: 10px; */
   height: 20px;
   width: 27px;
   border-bottom: 2px solid #808488;
@@ -13118,17 +13146,17 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   color: white;
 }
 
-.page-description {
-  font-size: 1em;
-  font-weight: 300;
-  /* margin-bottom: 40px; */
-  color: white;
-  /* margin-top: 100px; */
-}
+/* .page-description {
+  font-size: 1.2em;
+  font-weight: 300; */
+/* margin-bottom: 40px; */
+/* color: white; */
+/* margin-top: 100px; */
+/* } */
 
 @media (max-width: 768px) {
   .page-description {
-    margin-top: 20px;
+    font-size: 16px;
   }
 
   .page-info-simple .page-title {

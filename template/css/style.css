@@ -9456,6 +9456,7 @@ Copyright (c) 2015 Daniel Eden
     height: 30px;
   }
 }
+
 @media (max-width: 400px) {
   .logo-image img {
     width: 300px;
@@ -9733,16 +9734,6 @@ Copyright (c) 2015 Daniel Eden
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* .shop-image-terms::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
-  z-index: 1;
-} */
 
 .shop-image-ps3 {
   background-image: url('../img/shop-images/iphone-repair-leeds-caer-park.jpg');
@@ -9753,17 +9744,6 @@ Copyright (c) 2015 Daniel Eden
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* .shop-image-ps3::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
-  z-index: 1;
-} */
-
 .shop-image-ps4 {
   background-image: url('../img/shop-images/interior.jpg');
   background-size: cover;
@@ -9773,16 +9753,6 @@ Copyright (c) 2015 Daniel Eden
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* .shop-image-ps4::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
-  z-index: 1;
-} */
 
 .header-back-full-page .header-back-container {
   display: table-cell;
@@ -9828,7 +9798,7 @@ Copyright (c) 2015 Daniel Eden
   align-items: center;
   justify-content: space-between;
   margin-top: 0px;
-  height: 500px;
+  height: 350px;
 
 
 }
@@ -9899,11 +9869,31 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+@media (min-width: 1024px) {
+  .page-title {
+    margin-top: 0px;
+  }
+}
+
+.mail-text{
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-weight: 400;
+  padding-top: 20px;
+  color: #2288cc;
+}
+@media (max-width: 768px) {
+  .mail-text {
+    font-size: 1.2rem;
+  }
+}
+
 .page-description {
   font-size: 1.5rem;
   font-weight: 300;
   /* margin-bottom: 40px; */
   font-weight: 400;
+  padding-top: 20px;
   color: #ddd;
   animation: fadeInUp 1s ease-out 0.3s backwards;
 }
@@ -9943,6 +9933,42 @@ Copyright (c) 2015 Daniel Eden
   text-decoration: none;
 }
 
+.button-whatsapp {
+  display: inline-block;
+  padding: 18px 45px;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  animation-duration: 500;
+  transition: all 0.3s ease;
+   box-shadow: 0 6px 20px rgba(88, 204, 34, 0.6);
+  animation: fadeInUp 1s ease-out 0.6s backwards;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 768px) {
+  .button-whatsapp {
+    margin-top: 100px;
+    padding: 14px 30px;
+    font-size: 0.8rem;
+  }
+}
+
+.button-whatsapp:hover {
+  background: transparent;
+  border-color: #25D366;
+  transform: translateY(-2px);
+  transition-duration: 500;
+  box-shadow: 0 6px 20px rgba(88, 204, 34, 0.6);
+  color: #25D366;
+  text-decoration: none;
+}
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -9975,6 +10001,15 @@ Copyright (c) 2015 Daniel Eden
     justify-content: space-around;
     height: 400px;
 
+  }
+}
+@media (min-width: 1024px) {
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
   }
 }
 

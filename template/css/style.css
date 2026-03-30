@@ -9647,7 +9647,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .shop-image {
-  background-image: url('../img/shop-images/IMG_2421.JPG');
+  background-image: url('../img/shop-images/IMG_2421.webp');
   background-size: cover;
   background-position: center;
   /* position: relative; */
@@ -9667,7 +9667,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 1;
 } */
 .shop-image-contact {
-  background-image: url('../img/shop-images/IMG_2594.jpg');
+  background-image: url('../img/shop-images/IMG_2594.webp');
   background-size: cover;
   background-position: center;
   /* position: relative; */
@@ -9686,7 +9686,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 1;
 } */
 .shop-image-faq {
-  background-image: url('../img/shop-images/IMG_2686.jpg');
+  background-image: url('../img/shop-images/IMG_2686.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -9706,7 +9706,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 1;
 } */
 .shop-image-privacy {
-  background-image: url('../img/shop-images/IMG_2689.jpg');
+  background-image: url('../img/shop-images/IMG_2689.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -9726,7 +9726,7 @@ Copyright (c) 2015 Daniel Eden
 } */
 
 .shop-image-terms {
-  background-image: url('../img/shop-images/IMG_2473.jpg');
+  background-image: url('../img/shop-images/IMG_2473.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -9736,7 +9736,7 @@ Copyright (c) 2015 Daniel Eden
 
 
 .shop-image-ps3 {
-  background-image: url('../img/shop-images/iphone-repair-leeds-caer-park.jpg');
+  background-image: url('../img/shop-images/iphone-repair-leeds-caer-park.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -9745,7 +9745,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .shop-image-ps4 {
-  background-image: url('../img/shop-images/interior.jpg');
+  background-image: url('../img/shop-images/interior.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -10039,7 +10039,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-back-bg-5 {
-  background-image: url(../img/backgrounds/shop-pic.jfif);
+  background-image: url(../img/backgrounds/shop-pic.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -10057,7 +10057,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-back-bg-5-dark {
-  background-image: url(../img/backgrounds/shop-pic.jfif);
+  background-image: url(../img/backgrounds/shop-pic.webp);
   /* background-position: right top; */
   background-size: cover;
   background-position: center;
@@ -10076,7 +10076,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-back-ps3 {
-  background-image: url(../img/backgrounds/shop-pic.jfif);
+  background-image: url(../img/backgrounds/shop-pic.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -13450,6 +13450,11 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .promo-title-wrapper {
   margin-bottom: 40px;
   padding-top: 100px;
+}
+@media (max-width: 768px) {
+  .promo-title-wrapper {
+    padding-top: 40px;
+  }
 }
 
 .give-it-try .promo-title-wrapper {

@@ -13,8 +13,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon  -->
 	<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
-	<!-- Include StyleSheets -->
+
+	<!-- Step 1: Preconnect (add FIRST, before anything else) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Step 2: Load fonts non-blocking with display=swap -->
+	<link rel="preload" as="style"
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;300;400;700&display=swap"
+		onload="this.rel='stylesheet'">
+	<!-- Step 3: Fallback for JS-disabled browsers -->
+	<noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;300;400;700&display=swap">
+	</noscript>
+	<!-- Step 4: Load your stylesheet AFTER -->
 	<link rel="stylesheet" href="css/style.css">
+
 	<!-- <link rel="stylesheet" href="css/custom.css"> -->
 	<script src="js/modernizr.js"></script>
 	<!-- aos animation library -->
@@ -39,7 +53,8 @@
 					<div class="row" style="display: flex; align-items:center; justify-content:center;">
 						<div class="col-md-3 col-sm-6 col-xs-8" data-aos="fade-right" data-aos-duration="2000">
 							<a href="/" class="logo-image">
-								<img src="img/logos/consolerepairleeds-logo-light-2.png" alt="logo">
+								<img src="img/logos/consolerepairleeds-logo-light-2.svg" alt="logo"
+									fetchpriority="high">
 							</a>
 						</div>
 						<!-- UPDATED DESKTOP NAV  -->
@@ -351,8 +366,9 @@
 										style="background-color: rgba(16, 124, 16, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
 											<div class="col-md-5 col-sm-12">
-												<img class="img-responsive" src="img/xbox/xbox-logo.gif"
-													alt="Microsoft Xbox Logo"  loading="lazy"/>
+												<img class="img-responsive" src="img/xbox/xbox-logo.webp"
+													alt="Microsoft Xbox Logo" loading="lazy" decoding="async"
+													width="200" height="200" />
 											</div>
 											<div class="col-md-7 col-sm-12">
 												<h4 class="box-title">XBOX Series</h4>
@@ -379,8 +395,9 @@
 										style="background-color: rgba(0, 64, 152, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
 											<div class="col-md-4 col-sm-12">
-												<img class="img-responsive"
-													src="img/playstation/playstation-logo.gif" />
+												<img class="img-responsive" src="img/playstation/playstation-logo.webp"
+													alt="PlayStation Logo" loading="lazy" decoding="async" width="200"
+													height="200" />
 											</div>
 											<div class="col-md-7 col-sm-12">
 												<h4 class="box-title">PlayStation Series</h4>
@@ -408,13 +425,15 @@
 										style="background-color: rgba(222, 0, 0, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
 											<div class="col-md-4 col-sm-12">
-												<img class="img-responsive" src="img/nintendo/nintendo-logo.gif" />
+												<img class="img-responsive" src="img/nintendo/nintendo-logo.webp"
+													alt="Nintendo Logo" loading="lazy" decoding="async" width="200"
+													height="200" />
 											</div>
 											<div class="col-md-7 col-sm-12">
 												<h4 class="box-title">Nintendo Consoles</h4>
 												<p class="box-description turncate-multiline"
 													style="color:#DE0000; font-style:italic; font-size:14px;">
-													Expert repairs for Nintendo consoles, from Wii to legacy systems.
+													Expert repairs for Nintendo consoles, from Wii.
 												</p>
 												<p class="box-description turncate-multiline">
 													Our team fixes both common and rare Nintendo faults including
@@ -436,7 +455,9 @@
 										<div class="box box-small-icon-alt">
 											<div class="col-md-4 col-sm-12">
 												<img class="img-responsive"
-													src="img/portable-consoles/portable-logo.gif" />
+													src="img/portable-consoles/portable-logo.webp"
+													alt="Handheld Consoles Logo" loading="lazy" decoding="async"
+													width="200" height="200" />
 											</div>
 											<div class="col-md-7 col-sm-12">
 												<h4 class="box-title">Handheld Consoles</h4>
@@ -469,7 +490,9 @@
 									<div
 										style="background-color: rgba(76, 110, 245, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
-											<div class="col-md-4"><img class="img-responsive" src="img/iphone/IPad-Logo.wine.svg">
+											<div class="col-md-4"><img class="img-responsive"
+													src="img/iphone/IPad-Logo.wine.svg" alt="iPad Logo" loading="lazy"
+													decoding="async" width="200" height="200">
 											</div>
 											<div class="col-md-7">
 												<h4 class="box-title">iPad Repairs</h4>
@@ -498,7 +521,8 @@
 										style="background-color: rgba(32, 201, 151, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
 											<div class="col-md-4"><img class="img-responsive"
-													src="img/iphone/Apple_Inc.-Logo.wine.svg"></div>
+													src="img/iphone/Apple_Inc.-Logo.wine.svg" alt="iPhone Logo"
+													loading="lazy" decoding="async" width="200" height="200"></div>
 											<div class="col-md-7">
 												<h4 class="box-title">iPhone Repairs</h4>
 												<p class="box-description turncate-multiline"
@@ -527,7 +551,9 @@
 										style="background-color: rgba(151, 117, 250, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
 											<div class="col-md-4"><img class="img-responsive"
-													src="img/laptop/lap-top-brands-logos-25035301.webp">
+													src="img/laptop/lap-top-brands-logos-25035301.webp"
+													alt="Laptop Logo" loading="lazy" decoding="async" width="200"
+													height="200">
 											</div>
 											<div class="col-md-7">
 												<h4 class="box-title">Laptop Repairs</h4>
@@ -555,7 +581,9 @@
 									<div
 										style="background-color: rgba(92, 124, 250, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
-											<div class="col-md-4"><img class="img-responsive" src="img/iphone/MacOS-Logo.wine.svg">
+											<div class="col-md-4"><img class="img-responsive"
+													src="img/iphone/MacOS-Logo.wine.svg" alt="iMac Logo" loading="lazy"
+													decoding="async" width="200" height="200">
 											</div>
 											<div class="col-md-7">
 												<h4 class="box-title">iMac Repairs</h4>
@@ -584,7 +612,9 @@
 										style="background-color: rgba(253, 126, 20, 0.12); padding:20px; border-radius:20px;">
 										<div class="box box-small-icon-alt">
 											<div class="col-md-4"><img class="img-responsive"
-													src="img/computer/computer.png"></div>
+													src="img/computer/computer.webp" alt="Computer Logo" loading="lazy"
+													decoding="async" width="200" height="200">
+											</div>
 											<div class="col-md-7">
 												<h4 class="box-title">Computer Repairs</h4>
 												<p class="box-description turncate-multiline"
@@ -614,6 +644,7 @@
 							<!-- <div class="col-md-3 hidden-xs"></div> -->
 							<div class="col-md-12 col-xs-12">
 								<img class="img-responsive img-grey-border" src="img/games/supermario3dworld.png"
+									alt="super-mario-image" loading="lazy" decoding="async" width="200" height="200"
 									style="box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" />
 							</div>
 							<!-- <div class="col-md-3 hidden-xs"></div> -->
@@ -678,15 +709,12 @@
 					</div>
 				</div>
 				<div class="row col-md-12 mt50" data-aos="zoom-in" data-aos-duration="2000">
-					<!-- <div class="col-md-1"></div> -->
 					<div class="col-md-12">
 						<img class="img-responsive hide-mobile show-desktop"
-							src="img/games/assassins-creed-syndicate.webp"
+							src="img/games/assassins-creed-syndicate.webp" alt="assassins-image" loading="lazy"
+							decoding="async" width="200" height="200"
 							style="box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" />
-						<!-- <img class="img-responsive show-mobile hide-desktop"
-							src="img/games/assassins-creed-syndicate-2.png" /> -->
 					</div>
-					<!-- <div class="col-md-1"></div> -->
 				</div>
 				<div class="container">
 					<div class="row">
@@ -709,8 +737,9 @@
 				</div>
 				<!-- shop image  -->
 				<div data-aos="zoom-in" data-aos-duration="2000">
-					<img class="img-responsive img-grey-border" src="img/shop-images/IMG_2686.webp"
-						style="box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); width: 100%; height: auto; object-fit: cover; border-radius: 10px; margin-bottom: 40px;" loading="lazy" decoding="async" width="200" height="200"/>
+					<img class="img-responsive img-grey-border" src="img/shop-images/IMG_2686.webp" alt="2686-image"
+						style="box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); width: 100%; height: auto; object-fit: cover; border-radius: 10px; margin-bottom: 40px;"
+						loading="lazy" decoding="async" width="200" height="200" />
 				</div>
 				<!-- Call to Action -->
 				<div class="call-to-action call-to-action-overlay helper mt60"
@@ -770,9 +799,6 @@
 														<li>
 															<a href="privacy-policy.html">Privacy Policy</a>
 														</li>
-														<!-- <li>
-															<p>VAT Number :<br />192 136 315</p>
-														</li> -->
 													</ul>
 												</div>
 											</div>

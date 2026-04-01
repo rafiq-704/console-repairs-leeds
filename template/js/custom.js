@@ -43,3 +43,16 @@ document.querySelectorAll(".accordian-icon").forEach((icon, index) => {
     }
   });
 });
+
+
+
+AOS.init({
+  duration: 2000,
+  // once: true,
+  offset: 200
+});
+
+// Refresh AOS after all images have loaded
+window.addEventListener('load', function () {
+  AOS.refresh();
+});

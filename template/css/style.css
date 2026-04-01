@@ -683,6 +683,10 @@ th {
   float: left;
 }
 
+.cs-padding{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .col-xs-12 {
   width: 100%;
 }

@@ -598,6 +598,18 @@
 		<script src="../../../js/custom.js"></script>
 </body>
 <script>
+  AOS.init({
+    duration: 2000,
+    once: true,
+    offset: 200
+  });
+
+  // Refresh AOS after all images have loaded
+  window.addEventListener('load', function() {
+    AOS.refresh();
+  });
+</script>
+<script>
 	let aosEnabled = window.innerWidth >= 1200;
 	function initAOS() {
 		AOS.init({

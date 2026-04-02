@@ -56,3 +56,9 @@ AOS.init({
 window.addEventListener('load', function () {
   AOS.refresh();
 });
+
+document.querySelectorAll("img").forEach((img) => {
+  img.addEventListener("load", () => {
+    AOS.refresh();
+  });
+});

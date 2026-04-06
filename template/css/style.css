@@ -9956,7 +9956,7 @@ Copyright (c) 2015 Daniel Eden
 
 @media (max-width: 768px) {
   .button-whatsapp {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 14px 30px;
     font-size: 0.8rem;
   }
@@ -9996,7 +9996,7 @@ Copyright (c) 2015 Daniel Eden
   }
 } */
 
-@media(max-width: 400px) {
+@media(min-width: 400px) {
   .btn-text {
     display: flex;
     flex-direction: column;
@@ -10005,6 +10005,12 @@ Copyright (c) 2015 Daniel Eden
     justify-content: space-around;
     height: 400px;
 
+  }
+}
+@media(max-width: 380px) {
+  .btn-text {
+    display: flex;
+    height: 0px;
   }
 }
 

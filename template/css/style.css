@@ -9760,10 +9760,10 @@ Copyright (c) 2015 Daniel Eden
 .header-back-full-page .header-back-container {
   display: table-cell;
   vertical-align: middle;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   z-index: 2;
   position: relative;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 .header-back-container {
@@ -9783,8 +9783,17 @@ Copyright (c) 2015 Daniel Eden
     position: relative;
   }
 }
+@media (max-width: 391px) {
+  .header-back-full-page .header-back-container {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 140px;
+    z-index: 2;
+    position: relative;
+  }
+}
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .header-back-full-page .header-back-container {
     display: table-cell;
     vertical-align: top;
@@ -10001,8 +10010,8 @@ Copyright (c) 2015 Daniel Eden
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    justify-content: space-around;
+    padding-top: 0px;
+    /* justify-content: space-around; */
     height: 400px;
 
   }
@@ -10011,6 +10020,7 @@ Copyright (c) 2015 Daniel Eden
   .btn-text {
     display: flex;
     height: 0px;
+    margin-top: 80px;
   }
 }
 
@@ -10020,6 +10030,7 @@ Copyright (c) 2015 Daniel Eden
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
     height: 150px;
   }
 }
